@@ -9,5 +9,6 @@ sp = pyttsx3.init()
 for num in range (no,pages):
     page = pdfReader.getPage(num)
     text = page.extractText()
+    print(text)
     sp.say(text)
     sp.runAndWait()
